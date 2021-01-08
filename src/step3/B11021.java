@@ -1,9 +1,9 @@
-package Step3;
+package step3;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class B11022 {
+public class B11021 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 	
@@ -19,7 +19,7 @@ public class B11022 {
 			int b = Integer.parseInt(st.nextToken());
 			
 			int c = a+b;
-			bw.write("Case #" + (i+1) + ": " + a + " + " + b + " = " + c + "\n");
+			bw.write("Case #" + (i+1) + ": " + c + "\n");
 		}
 		
 		bw.flush();

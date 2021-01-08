@@ -1,4 +1,4 @@
-package Step2;
+package step2;
 import java.util.Scanner;
 
 public class B1330 {

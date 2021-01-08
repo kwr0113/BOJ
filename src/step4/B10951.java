@@ -1,4 +1,4 @@
-package Step4;
+package step4;
 
 import java.io.*;
 import java.util.*;
