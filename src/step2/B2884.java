@@ -10,12 +10,14 @@ public class B2884 {
 		int h = sc.nextInt();
 		int m = sc.nextInt();
 		
-		int time = h * 60 + m - 45;
-		
-		if ( time >= 0 ) {
-			System.out.println( (time/60) + " " + (time%60) );
-		} else if ( time < 0 ) {
-			System.out.println("23 " + (15+m) );
+		if ( m >= 45 && h != 0 ) {
+			System.out.println( h + " " + ( m-45 ) );
+		} else if ( m < 45 && h != 0 ) {
+			System.out.println( (h-1) + " " + ( 15+m ) );
+		} else if ( m >= 45 && h == 0 ) {
+			System.out.println( 23 + " " + ( m-45 ) );
+		} else if ( m < 45 && h == 0 ) {
+			System.out.println( 23 + " " + ( 15+m ) );
 		}
 
 	}

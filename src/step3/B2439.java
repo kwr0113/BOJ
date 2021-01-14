@@ -1,9 +1,8 @@
 package step3;
 
 import java.io.*;
-import java.util.StringTokenizer;
 
-public class B2438 {
+public class B2439 {
 
 	public static void main(String[] args) throws IOException {
 		
@@ -12,14 +11,13 @@ public class B2438 {
 		
 		int num = Integer.parseInt(br.readLine());
 		
-		for(int i = 1; i < (num+1); i++) {
+		for(int i = 1; i <= num; i++) {
 			
-			int t = num - i;
-			for(int k = 0 ; k < t; k++) {
+			for(int k = 1 ; k <= num - i; k++) {
 				bw.write(" ");
 			}
 			
-			for(int j = 0; j < i; j++) {
+			for(int j = 1; j <= i; j++) {
 				bw.write("*");
 			}
 			bw.write("\n");
@@ -31,3 +29,4 @@ public class B2438 {
 	}
 
 }
+

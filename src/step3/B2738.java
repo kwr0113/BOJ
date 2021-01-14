@@ -1,7 +1,7 @@
 package step3;
 import java.util.Scanner;
 
-public class B2739 {
+public class B2738 {
 
 	public static void main(String[] args) {
 		
