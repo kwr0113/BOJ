@@ -10,27 +10,16 @@ public class B10818 {
 		int num = sc.nextInt();
 		int[] array = new int[num];
 		
-		int count = 0;
-		
-		for(count = 0; count < num; count++) {
-			array[count] = sc.nextInt();
+		for(int i = 0; i < num; i++) {
+			array[i] = sc.nextInt();
 		}
 		
 		int min = array[0];
 		int max = array[0];
 		
-		count = 0;
-
-		while(count < num) {
-			min = min < array[count] ? min : array[count];
-			count++;
-		}
-		
-		count = 0;
-		
-		while(count < num) {
-			max = max > array[count] ? max : array[count];
-			count++;
+		for(int i = 0; i < num; i++) {
+			min = min < array[i] ? min : array[i];
+			max = max > array[i] ? max : array[i];
 		}
 		
 		System.out.println(min + " " + max);

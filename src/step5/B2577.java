@@ -13,13 +13,12 @@ public class B2577 {
 		int c = sc.nextInt();
 		
 		int num = a * b * c;
-		int num2 = a * b * c;
 		
 		int[] count = {0,0,0,0,0,0,0,0,0,0};
 		
 		while(true) {
 
-			switch(num2 % 10) {
+			switch(num % 10) {
 				case 0: count[0]++; break;
 				case 1: count[1]++; break;
 				case 2: count[2]++; break;
@@ -31,10 +30,10 @@ public class B2577 {
 				case 8: count[8]++; break;
 				case 9: count[9]++; break;
 			}
-			if(num2 / 10 == 0) {
+			if(num / 10 == 0) {
 				break;
 			}
-			num2 = num2 / 10;
+			num /= 10;
 		}
 		
 		for(int i = 0; i < 10; i++) {

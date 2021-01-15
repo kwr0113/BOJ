@@ -17,6 +17,7 @@ public class B10809 {
 		}
 
 		for(int i = 0; i < s.length(); i++) {
+			System.out.println(s.charAt(i)-1);
 			int num = s.charAt(i)-97; // 'a'의 아스키코드가 97이라. a는 배열의 0번째
 			if(array[num] >= 0) { // 이미 값이 있으면 continue
 				continue;

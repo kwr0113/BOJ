@@ -20,7 +20,7 @@ public class B1546 {
 		}
 		
 		for(int i = 0; i < num; i++) {
-			nscore[i] = (score[i] * 100 / maxScore);
+			nscore[i] = (score[i] / maxScore * 100);
 			total += nscore[i];
 		}
 		

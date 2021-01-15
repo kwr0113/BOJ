@@ -22,8 +22,7 @@ public class B4673 {
 	}
 	
 	public static int d(int a) {
-		int result = 0;
-		result = a + a % 10 + a % 100 / 10 + a % 1000 / 100 + a % 10000 / 1000;	
+		int result = a + a % 10 + a % 100 / 10 + a % 1000 / 100 + a % 10000 / 1000;	
 		return result;
 	}
 
